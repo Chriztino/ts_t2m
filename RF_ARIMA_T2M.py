@@ -20,7 +20,7 @@ def generate_synthetic_series(n=900):
     x2 = np.cos(2*np.pi*t/90) + 0.5*(t/n) + 0.15*np.random.randn(n)                  # 慢周期+轻趋势
     x3 = np.random.randn(n)                                                          # 噪声型特征
     x4 = (np.sin(2*np.pi*t/20) > 0).astype(float)                                    # 二值波动
-    X = np.column_stack([x1, x2, x3, x4])
+    # X = np.column_stack([x1, x2, x3, x4])
 
     # 线性ARMA(2,1)生成过程
     e = 0.6*np.random.randn(n)  # 创噪

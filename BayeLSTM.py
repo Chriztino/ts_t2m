@@ -8,6 +8,9 @@ from sklearn.gaussian_process.kernels import Matern, WhiteKernel, ConstantKernel
 from sklearn.preprocessing import StandardScaler
 from scipy.stats import norm
 
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
+plt.rcParams['axes.unicode_minus'] = False
+
 # 1. 生成虚拟时间序列
 np.random.seed(42)
 T = 2000
